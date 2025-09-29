@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Halaman Utama"
+    files:
+      - file: "content/_index.md"
+        label: "Beranda"
+        name: "home"
+        fields:
+          - {label: "Judul Halaman", name: "title", widget: "string"}
+          - {label: "Konten", name: "body", widget: "markdown"}
+
+      - file: "content/layanan/_index.md"
+        label: "Layanan"
+        name: "services"
+        fields:
+          - {label: "Judul", name: "title", widget: "string"}
+          - {label: "Isi Layanan", name: "body", widget: "markdown"}
+
+      - file: "content/kontak/_index.md"
+        label: "Kontak"
+        name: "contact"
+        fields:
+          - {label: "Judul", name: "title", widget: "string"}
+          - {label: "Isi Kontak", name: "body", widget: "markdown"}
+
+  - name: "produk"
+    label: "Produk & Jenis Barang"
+    folder: "content/produk"
+    create: true
+    fields:
+      - {label: "Judul Produk", name: "title", widget: "string"}
+      - {label: "Gambar", name: "image", widget: "image"}
+      - {label: "Deskripsi", name: "body", widget: "markdown"}
+
+  - name: "portofolio"
+    label: "Portofolio (Hasil Cetak)"
+    folder: "content/projects"
+    create: true
+    fields:
+      - {label: "Judul Proyek", name: "title", widget: "string"}
+      - {label: "Gambar Hasil", name: "image", widget: "image"}
+      - {label: "Deskripsi", name: "body", widget: "markdown"}

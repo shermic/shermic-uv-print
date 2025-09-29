@@ -1,0 +1,34 @@
+baseURL = "https://shermic-uv-print.netlify.app/"
+languageCode = "id-ID"
+title = "SherMic UV Print – Solusi Percetakan Digital & Laser Marking Profesional"
+theme = "PaperMod"
+defaultContentLanguage = "id"
+
+[params]
+  description = "Jasa UV printing & laser marking profesional di Jakarta. Cetak di logam, plastik, kaca, akrilik, kayu. Hasil tajam, tahan lama, harga terjangkau."
+  author = "SherMic UV Print"
+  defaultTheme = "light"
+  ShowReadingTime = false
+  ShowShareButtons = false
+
+[menu]
+  [[menu.main]]
+    name = "Beranda"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Layanan"
+    url = "/layanan/"
+    weight = 2
+  [[menu.main]]
+    name = "Portofolio"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "YouTube"
+    url = "https://www.youtube.com/@shermicuvprint"
+    weight = 4
+  [[menu.main]]
+    name = "Kontak"
+    url = "/kontak/"
+    weight = 5
